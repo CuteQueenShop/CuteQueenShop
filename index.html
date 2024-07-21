@@ -75,6 +75,8 @@
         }
         .hero h2 {
             z-index: 1;
+            text-align: center;
+            padding: 0 10px;
         }
         .content {
             padding: 40px 20px;
@@ -164,12 +166,24 @@
                 flex-direction: column;
                 align-items: center;
             }
+            .hero {
+                height: 300px;
+                font-size: 2em;
+            }
         }
 
         @media (max-width: 576px) {
             .content {
                 margin: 10px;
                 padding: 20px;
+            }
+            .hero {
+                height: 200px;
+                font-size: 1.5em;
+            }
+            nav a {
+                padding: 10px;
+                font-size: 1em;
             }
         }
     </style>
