@@ -97,17 +97,15 @@
             margin: 0 auto;
         }
         .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
             padding: 20px 0;
         }
         .product {
             background-color: white;
             border: 1px solid #ddd;
-            margin: 15px;
             padding: 15px;
-            width: calc(25% - 30px);
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -161,31 +159,14 @@
         }
 
         /* Media Queries para diseño responsivo */
-        @media (max-width: 1200px) {
-            .product {
-                width: calc(33.33% - 30px);
-            }
-        }
-
-        @media (max-width: 992px) {
-            .product {
-                width: calc(50% - 30px);
-            }
-        }
-
         @media (max-width: 768px) {
             nav {
                 flex-direction: column;
-            }
-            .product {
-                width: calc(50% - 20px);
+                align-items: center;
             }
         }
 
         @media (max-width: 576px) {
-            .product {
-                width: calc(100% - 30px);
-            }
             .content {
                 margin: 10px;
                 padding: 20px;
@@ -338,8 +319,6 @@
             <p><a href="mailto:cutequeencontacto@gmail.com">cutequeencontacto@gmail.com</a></p>
             <h3>Página de Facebook</h3>
             <p><a href="https://web.facebook.com/profile.php?id=61563413660484" target="_blank">https://web.facebook.com/profile.php?id=61563413660484</a></p>
-            <h3>WhatsApp</h3>
-            <p>5513436492</p>
         </div>
     </div>
     <footer class="footer">
